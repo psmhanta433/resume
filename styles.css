@@ -5,8 +5,16 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #555;
+    text-align: center;
+    padding: 10px;
+    font-family:verdana
+}
+
+.image{
+    background-color: #fff;
+    color: #555;
     text-align: center;
     padding: 10px;
 }
@@ -18,7 +26,7 @@ h1 {
 
 .pdf-container{
     display: block;
-    margin-left: 150px;
+    margin: 150px;
     /* margin-right: auto; */
     width: 50%;
 }
