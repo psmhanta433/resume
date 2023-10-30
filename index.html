@@ -1,14 +1,24 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
     <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js" integrity="sha256-W1eZ5vjGgGYyB6xbQu4U7tKkBvp69I9QwVTwwLFWaUY=" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF.js Render PDF in Canvas </title>
+
+    <style>
+        .center{
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <h2>Prashant Mhanta</h2>
-    <embed src="Prashant_Mhanta(2).pdf" type="application/pdf" width="100%" height="650">
+    <div class="center">
+        <img src="gif1.gif" style="align-items: center;" width="200px" height="150px">
+        <embed src="Prashant_Mhanta(2).pdf" type="application/pdf" width="100%" height="650">
+    </div> -->
+    
     <!-- <canvas id="my_canvas"></canvas>
 
     <script>
@@ -16,8 +26,8 @@
             console.log("This file has "+doc._pdfInfo.numPages+" Pages");
         });
     </script> -->
-</body>
-</html>
+<!-- </body>
+</html> -->
 
 
 <!-- <html>
@@ -83,3 +93,28 @@
     <embed src="Prashant_Mhanta(2).pdf" type="application/pdf" width="100%" height="90%">
     <iframe src="Prashant_Mhanta(2).pdf" frameborder="0" style="width: 100%; height: 100%;"></iframe>
 </html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Prashant Mhanta</h1>
+    </header>
+    <main>
+        <div id="pdf-container">
+            <img src="Prashant_Mhanta(2)_page-0001.jpg" alt="" width="50%">
+            <img src="Prashant_Mhanta(2)_page-0002.jpg" alt="" width="50%">
+            <!-- PDF pages will be displayed here -->
+            <!-- <embed src="Prashant_Mhanta(2).pdf" type="application/pdf" width="100%" height="650px"> -->
+        </div>
+    </main>
+    <script src="pdf.js"></script>
+    <script src="viewer.js"></script>
+</body>
+</html>
