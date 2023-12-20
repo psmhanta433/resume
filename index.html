@@ -1,98 +1,6 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js" integrity="sha256-W1eZ5vjGgGYyB6xbQu4U7tKkBvp69I9QwVTwwLFWaUY=" crossorigin="anonymous"></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF.js Render PDF in Canvas </title>
-
-    <style>
-        .center{
-            align-items: center;
-        }
-    </style>
-</head>
-<body>
-    <h2>Prashant Mhanta</h2>
-    <div class="center">
-        <img src="gif1.gif" style="align-items: center;" width="200px" height="150px">
-        <embed src="Prashant_Mhanta(2).pdf" type="application/pdf" width="100%" height="650">
-    </div> -->
-    
-    <!-- <canvas id="my_canvas"></canvas>
-
-    <script>
-        pdfjsLib.getDocument('file:///C:/Users/PSM/Documents/Prashant_Mhanta(2).pdf').then(doc => {
-            console.log("This file has "+doc._pdfInfo.numPages+" Pages");
-        });
-    </script> -->
-<!-- </body>
-</html> -->
 
 
-<!-- <html>
-    <head>
-        <title>PDF Viewer</title>
-    </head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js" integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <body>
-        <div id="my_pdf_vierer">
-            <div id="canvas_container">
-                <canvas id="pdf_renderer">
 
-                </canvas>
-            </div>
-            <div id="navigation_controller">
-                <button id="go_previous">Previous</button>
-                <input type="number" value="1" id="current_page">
-                <button id="gonext">Next</button>
-            </div>
-            <div id="zoom_controller">
-                <button id="zoom_in">+</button>
-                <button id="zoom_out">-</button>
-            </div>
-        </div>        
-    </body>
-    <script>
-        var myState={
-            pdf : null,
-            currentPage:1,
-            zoom :1
-
-        }
-
-        pdfjsLib.getDocument("week_6.pdf").then(pdf =>{
-            myState.pdf = pdf
-            render()
-        })
-
-        function render(){
-            myState.pdf.getPage(myState.currentPage).then(page => {
-                var canvas = document.getElementById("pdf_renderer")
-                var context=canvas.getContext("2d")
-                var viewport = page.getViewport(myState.zoom)
-
-                canvas.width=viewport.width;
-                canvas.height=viewport.height;
-
-                page.render({
-                    canvasContext:context,
-                    viewport:viewport
-                })
-            })
-        }
-    </script>
-</html> -->
-
-
-<!-- <html>
-    <head>
-        <title>PDF View</title>
-    </head>
-    <h2>Prashant Mhanta</h2>
-    <embed src="Prashant_Mhanta(2).pdf" type="application/pdf" width="100%" height="90%">
-    <iframe src="Prashant_Mhanta(2).pdf" frameborder="0" style="width: 100%; height: 100%;"></iframe>
-</html> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -102,10 +10,9 @@
     <title>PDF Viewer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body >
+    
     <header>
-        <!-- <img src="gif1.gif" alt="" width="50px" height="50px"> -->
-        <!-- <h1>Prashant Mhanta</h1> -->
         <br>
         <img id="image" src="gif1.gif" alt="" width="150px" height="150px" >
         <div id="pdf-container">
